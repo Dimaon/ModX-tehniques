@@ -2,9 +2,9 @@
 $from = array(  'context_key'=>'web',
                 'cultureKey'=>'ru');
 
-$target = array('context_key'=>'english',
-                'cultureKey'=>'en',
-                'mark' => ' [EN]');
+$target = array('context_key'=>'ua',
+                'cultureKey'=>'ua',
+                'mark' => '');
 
 function getBabelTV($modx){
     return $modx->getObject('modTemplateVar',array('name'=>'babelLanguageLinks'));
