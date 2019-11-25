@@ -112,4 +112,9 @@ foreach($resources as $resource){
     if(empty($resource_in_target))
         copyResourceToTarget($resource, $modx, $from, $target);
 }
+$resources = $modx->getCollection('modResource');
+
+foreach($resources as $resource){
+    $resource->save();
+}
 return 'done';
